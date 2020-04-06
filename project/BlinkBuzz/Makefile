@@ -10,7 +10,7 @@ AS		= msp430-elf-as
 all: blinkBuzz.elf
 
 #additional rules for files
-blinkBuzz.elf: ${COMMON_OBJECTS} p2_interrupt_handler.o led.o switches.o buzzer.o stateMachine.o wdInterruptHandler.o blinkBuzz.o ../lib/libTimer.a
+blinkBuzz.elf: ${COMMON_OBJECTS} p2_interrupt_handler.o led.o switches.o buzzer.o stateMachine.o wdInterruptHandler.o state_1.o blinkBuzz.o ../lib/libTimer.a
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^
 
 load: blinkBuzz.elf

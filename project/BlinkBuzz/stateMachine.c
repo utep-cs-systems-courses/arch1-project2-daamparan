@@ -4,6 +4,7 @@
 #include "switches.h"
 #include "buzzer.h"
 #include "led.h"
+#include "state_1.h"
 
 char stateAt = 0; //allows us to use it outside the method
 
@@ -42,8 +43,9 @@ void state_advance() {
 void state1() {
 
   buzzer_set_period(700);
-  static char next = 0;
- 
+  state0();
+  //static char next = 0;
+  /*
   switch(next) { //this will then allows us to repeat within the same state performing different actions    
   case 0:
     green_on = 1;
@@ -66,6 +68,7 @@ void state1() {
     next = 0; // repeat
     break;
   }
+  */
 }
 
 void state2() {

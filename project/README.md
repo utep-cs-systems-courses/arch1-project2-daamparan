@@ -24,3 +24,13 @@ State 1 is Sw1 and so on for all four buttons
 # Future Plans
 Within the next few days an implementation of a song will be attempted as well
 as the assembly portion of the code
+
+# Sunday 4/5 Update: Pt.2 Assembly Switch Statements
+Translating the first state of the state machine was not too dificult. By
+default this application already has the state activated to work with the
+assembly. HOWEVER, the assembly portion of the code seems to not work how it
+is suppose to
+A persistent error of internal error unsupported relocation error was given
+and with various debugging and online research no solution was found. The
+correct working section of state one is simply commented out so that is what
+the assembly is suppose to do.

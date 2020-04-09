@@ -14,25 +14,21 @@ void state_advance() {
 
     //these are the states and are deined below
   case 1:
-    
     state1();
     led_update();
     break;
 
-  case 2:
-    
+  case 2:    
     state2();
     led_update();
     break;
     
   case 3:
-    
     state3();
     led_update();
     break;
     
   case 4:
-    
     state4();
     led_update();
     break;
@@ -43,7 +39,7 @@ void state_advance() {
 void state1() {
 
   buzzer_set_period(700);
-  state0();
+  stateBegin();
   //static char next = 0;
   /*
   switch(next) { //this will then allows us to repeat within the same state performing different actions    

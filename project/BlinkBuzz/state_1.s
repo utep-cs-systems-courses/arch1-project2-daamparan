@@ -24,7 +24,9 @@ stateBegin:
 	mov &n, r12		;store into a register
 	add r12, r12		;double the source so we can go to correct location
 	mov jt(r12), r0		;move the selected place in jt to program counter
-	
+
+default:
+	jmp end			;go directly to our out method
 option1:	
 	mov.b #1, &green_on;turns on our green LED                
 	mov.b #1, &red_on  ;turns on our red LED
@@ -45,8 +47,6 @@ option4:
 	mov.b #1, &red_on	;turn on red led
 	mov #1, &n		;now we go back to first state to repeat
 	jmp end			;break
-
-default:
-	nop			;go to end 
+	
 end:
 	pop r0			;follow the program counter

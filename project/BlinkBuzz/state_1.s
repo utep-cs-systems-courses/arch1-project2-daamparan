@@ -1,9 +1,10 @@
 	.arch msp430g2553
-	
+
 	.data 			;next is a static variable
 n:
 	.word 1 		;storecs the beginning case
-
+	.align 2
+	
 	.text			;Jump Table will be stored
 jt:
 	.word default	  	;default case j[0]

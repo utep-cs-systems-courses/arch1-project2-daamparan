@@ -34,3 +34,7 @@ A persistent error of internal error unsupported relocation error was given
 and with various debugging and online research no solution was found. The
 correct working section of state one is simply commented out so that is what
 the assembly is suppose to do.
+
+# Update 4/14
+Assembly has been fully implemented, error was corrected thanks to
+Dr. Freudenthal. The correction was done with an align 2 after n is "declared".
